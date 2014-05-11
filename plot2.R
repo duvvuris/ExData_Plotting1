@@ -1,5 +1,4 @@
-# This project is the first of the four source files to plot as per the project instructions
-# This program reads the requried data and writes it to .csv file for further work
+# This source file is second  of the four source files to plot as per the project instructions
 
 # set the working directory 
 
@@ -19,7 +18,7 @@ mysubsetData$DateTime <- strptime(paste(mysubsetData$Date, mysubsetData$Time), f
 
 #Initialize the .png file for writing the plot to file 
 
-png(file="plot1.png", width=480, height=480)
+png(file="plot2.png", width=480, height=480)
 plot(mysubsetData$DateTime, mysubsetData$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 
 dev.off()
